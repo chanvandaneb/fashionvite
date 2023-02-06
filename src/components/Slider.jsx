@@ -71,10 +71,18 @@ const Desc = styled.p`
     letter-spacing: 2px;
 `
 const Button = styled.button`
-    padding: 10px;
+    width: 200px;
+    padding: 20px;
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: white;
+        background-color: black;
+    }
 `
 
 const Slider = () => {
