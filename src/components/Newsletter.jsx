@@ -32,7 +32,7 @@ const InputContainer = styled.div`
 const Input = styled.input`
     border: none;
     flex: 8;
-    padding: 18px;
+    padding: 30px;
     outline: none;
     padding-left: 20px;
 `
@@ -58,7 +58,7 @@ const Newsletter = () => {
         <InputContainer>
             <Input placeholder='Your Email Address' style={{fontSize:20}}/>        
             <Button>
-                <RiSendPlane2Fill/>
+                <RiSendPlane2Fill style={{fontSize: 30}}/>
             </Button>
         </InputContainer>
     </Container>

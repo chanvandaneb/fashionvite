@@ -8,7 +8,7 @@ const Container = styled.div`
   background-color: white;
 `;
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  padding: 20px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,7 +38,6 @@ const Right = styled.div`
 `;
 
 
-
 const Navbar = () => {
 
 
@@ -49,7 +48,7 @@ const Navbar = () => {
         },
         {
             pathName: 'PRODUCT',
-            to: '/product',
+            to: '/product-list',
         },
         {
             pathName: 'ABOUT',
@@ -61,33 +60,29 @@ const Navbar = () => {
         },
     ]
 
-    const styledLink = {
-        color: "Green", textDecoration: "none", padding: "0px 20px", cursor: "pointer"
-    }
-
 
   return (
     <Container>
       <Wrapper>
         <Left>
-          <Logo src="https://i.ibb.co/ths3WXg/logoblack.png"></Logo>
+          <Logo src="https://i.ibb.co/M1h670Z/logoblack.png"></Logo>
         </Left>
         <Center>
 
         { dataLink.map(({pathName, to}, index) => {
             return (
                 
-                <Link style={{color: "Green", textDecoration: "none", padding: "0px 20px", cursor: "pointer"}} key={index} to={to}>{pathName}</Link>
+                <Link key={index} to={to}>{pathName}</Link>
             )
         }) }
 
         </Center>
         <Right>
-            <Link style={{color: "Green", textDecoration: "none", cursor: "pointer"}} to="/register">REGISTER</Link>
-            <Link style={styledLink} to="sign-in">SIGN IN</Link>
+            <Link to="register">REGISTER</Link>
+            <Link to="sign-in">SIGN IN</Link>
             
-            <Link style={styledLink} to="cart">
-                <BsBagFill />
+            <Link to="cart">
+                <BsBagFill style={{fontSize: 30}}/>
             </Link>
 
             

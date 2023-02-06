@@ -5,9 +5,8 @@ import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 
-
 const Container = styled.div`
-    height: 60vh;
+    height: 58vh;
     color: white;
     background-color: black;
 `
@@ -15,7 +14,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
     flex: 1;
     display: flex;
-    padding: 20px;
+    padding: 80px 60px;
     flex-direction: row;
 `
 const Left = styled.div`
@@ -111,10 +110,10 @@ const Footer = () => {
     <Container>
         <Wrapper>
             <Left>
-                <Logo src="https://i.ibb.co/sKrWVmT/logowhite.png">               
+                <Logo src="https://i.ibb.co/0j4dLf0/logowhite.png">               
                 </Logo>
                 <Desc>
-                    Limited Edition Fashion.
+                Babype was founded in 2019 with vision of building the best online store for children clothing. 
                 </Desc>
                 <SocialContainer>
                     <SocialIcon color="3B5999">
@@ -157,7 +156,7 @@ const Footer = () => {
 
         <Copyright>
             <CopyrightText>
-                Copyright ©2023 <span style={{fontWeight:800}}>Arura</span>  (Cambodia) - All rights Reserved
+                Copyright ©2023 <span style={{fontWeight:700}}>Babype</span>  (Cambodia) - All rights Reserved
             </CopyrightText>
         </Copyright>
 

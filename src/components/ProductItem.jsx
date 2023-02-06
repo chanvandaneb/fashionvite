@@ -48,6 +48,10 @@ const Image = styled.img`
     z-index: 2;
 `
 
+const Name = styled.h1``
+
+const Price = styled.p``
+
 const Icon = styled.div`
     width: 50px;
     height: 50px;
@@ -69,7 +73,9 @@ const ProductItem = ({item}) => {
   return (
     <Container>
         <Circle/>
-        <Image src={item.img}/>
+            <Image src={item.img}/>
+            <Name src={item.name}/>
+            <Price src={item.price}/>
         <Info>
             <Icon>
                 <BsBagFill/>
