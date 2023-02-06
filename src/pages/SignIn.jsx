@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 const Container = styled.div`
@@ -18,6 +19,12 @@ const Wrapper = styled.div`
     background-color: white;
     border-radius: 10px;
 `
+
+const Logo = styled.img`
+    display: flex;
+    margin: auto;
+    align-items: center;
+`
 const Title = styled.h1`
     font-size: 24px;
     font-weight: 300;
@@ -32,7 +39,8 @@ const Input = styled.input`
     flex: 1;
     min-width: 40%;
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 5px;
 `
 
 const Button = styled.button`
@@ -52,24 +60,22 @@ const Button = styled.button`
     }
 `
 
-const Link = styled.a`
-  margin: 5px 0px;
-  font-style: 12px;
-  text-decoration: underline;
-  cursor: pointer;
-`
+
 
 const SignIn = () => {
   return (
     <Container>
         <Wrapper>
+            <Link to="/">
+                <Logo src="https://i.ibb.co/M1h670Z/logoblack.png"/>
+            </Link>
             <Title>SIGN IN</Title>
             <Form>
-                <Input placeholder="username" />
-                <Input placeholder="password" />
+                <Input placeholder="Username" />
+                <Input placeholder="Password" />
                 <Button>SIGN IN</Button>
-                <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-                <Link>CREATE A NEW ACCOUNT</Link>
+                <Link to="">DO NOT YOU REMEMBER THE PASSWORD?</Link>
+                <Link to="">CREATE A NEW ACCOUNT</Link>
             </Form>
         </Wrapper>
     </Container>

@@ -2,16 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { BsBagFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 100px;
   background-color: white;
+  ${mobile({ height: "50px"})}
+  
 `;
 const Wrapper = styled.div`
   padding: 20px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({ padding: "10px 0px"})}
 `;
 
 const Left = styled.div`
@@ -35,6 +39,7 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  ${mobile({ justifyContent: "center"})}
 `;
 
 

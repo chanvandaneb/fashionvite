@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
 
 
 const Container = styled.div`
@@ -16,6 +18,12 @@ const Wrapper = styled.div`
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+`
+
+const Logo = styled.img`
+    display: flex;
+    margin: auto;
+    align-items: center;
 `
 const Title = styled.h1`
     font-size: 24px;
@@ -59,14 +67,17 @@ const Register = () => {
   return (
     <Container>
         <Wrapper>
+            <Link to="/">
+                <Logo src="https://i.ibb.co/M1h670Z/logoblack.png"/>
+            </Link>
             <Title>CREATE AN ACCOUNT</Title>
             <Form>
-                <Input placeholder="first name" />
-                <Input placeholder="last name" />
-                <Input placeholder="username" />
-                <Input placeholder="email" />
-                <Input placeholder="password" />
-                <Input placeholder="confirm password" />
+                <Input placeholder="First name" />
+                <Input placeholder="Last name" />
+                <Input placeholder="Username" />
+                <Input placeholder="Email" />
+                <Input placeholder="Password" />
+                <Input placeholder="Confirm password" />
                 <Agreement>
                 By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.
                 </Agreement>

@@ -13,13 +13,11 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-    font-size: 70px;
-`
-const Desc = styled.div`
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 600;
     margin-bottom: 40px;
 `
+
 const InputContainer = styled.div`
     width: 80%;
     /* height: 80px; */
@@ -53,8 +51,7 @@ const Button = styled.button`
 const Newsletter = () => {
   return (
     <Container>
-        <Title>Newsletter</Title>
-        <Desc>Start of Summer Up to 35% off on all items</Desc>
+        <Title>Start of Summer Up to 35% off on all items</Title>
         <InputContainer>
             <Input placeholder='Your Email Address' style={{fontSize:20}}/>        
             <Button>
