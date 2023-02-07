@@ -43,6 +43,18 @@ const Right = styled.div`
 `;
 
 
+const ItemLink = styled(Link)`
+  margin: 0px 15px;
+
+  
+  &:hover {
+    border-bottom: 1px solid #585858;
+    color: #000000;
+    font-weight: 800;
+    scale: calc(1.04);
+  }
+`;
+
 const Navbar = () => {
 
 
@@ -60,8 +72,8 @@ const Navbar = () => {
             to: '/about-us',
         },
         {
-            pathName: 'NEWS/EVENT',
-            to: '/news-event',
+            pathName: 'CONTACT US',
+            to: '/contact-us',
         },
     ]
 
@@ -77,18 +89,18 @@ const Navbar = () => {
         { dataLink.map(({pathName, to}, index) => {
             return (
                 
-                <Link key={index} to={to}>{pathName}</Link>
+                <ItemLink key={index} to={to}>{pathName}</ItemLink>
             )
         }) }
 
         </Center>
         <Right>
-            <Link to="register">REGISTER</Link>
-            <Link to="sign-in">SIGN IN</Link>
+            <ItemLink to="register">REGISTER</ItemLink>
+            <ItemLink to="sign-in">SIGN IN</ItemLink>
             
-            <Link to="cart">
+            <ItemLink to="cart">
                 <BsBagFill style={{fontSize: 30}}/>
-            </Link>
+            </ItemLink>
 
             
         </Right>

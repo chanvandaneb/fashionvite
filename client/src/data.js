@@ -96,6 +96,6 @@ export const sliderItems = [
       name: "Baby Header Clothes",
       price: 25,
       dis_price: 40,
-      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+      img:"https://i.ibb.co/yNtGS6k/Women-Jacket-PNG-High-Quality-Image.png",
     },
   ]

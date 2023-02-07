@@ -8,6 +8,7 @@ import Cart from '../pages/Cart';
 import SignIn from '../pages/SignIn'
 import Register from '../pages/Register'
 import About from '../pages/About';
+import ContactUs from '../pages/ContactUs';
 
 const router = createBrowserRouter([
     {
@@ -31,12 +32,16 @@ const router = createBrowserRouter([
                 element: <About/>
             },
             {
-                path: "news-event",
-                element: <Cart/>
+                path: "contact-us",
+                element: <ContactUs/>
             },
             {
                 path: '/cart',
                 element: <Cart/>
+            },
+            {
+                path: ':productId',
+                element: <Product/>
             }
         ]
     },
