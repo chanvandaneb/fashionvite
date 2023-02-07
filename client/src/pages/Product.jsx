@@ -105,7 +105,7 @@ const Button = styled.button`
 const Product = () => {
   const { productId } = useParams();
 
-  const { img, name, price } = popularProducts[productId-1];
+  const { img, name, price, dis_price } = popularProducts[productId-1];
 
   return (
     <Container>
@@ -118,7 +118,7 @@ const Product = () => {
           <Desc>
             {name}
           </Desc>
-          <Price>{price}</Price>
+          <Price><strong>$ {price}</strong> <del>$ {dis_price}</del> </Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
