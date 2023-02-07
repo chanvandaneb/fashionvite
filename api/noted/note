@@ -1,0 +1,26 @@
+// TODO Test router
+
+// const router = require("express").Router();
+
+// router.get("/usertest", (req, res) => {
+//   res.send("user test is success");
+// });
+
+// router.post("/userposttest", (req, res) => {
+//   const username = req.body.username;
+//   const age = req.body.age;
+//   const location = req.body.location;
+//   console.log(username);
+//   console.log(age);
+//   console.log(location);
+//   res.send(
+//     "Your username is: " +
+//       username +
+//       " age is: " +
+//       age +
+//       " and location is: " +
+//       location
+//   );
+// });
+
+// module.exports = router;
